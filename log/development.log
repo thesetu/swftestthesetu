@@ -1,0 +1,57 @@
+
+
+Started GET "/" for 127.0.0.1 at 2010-12-09 22:24:27 +0600
+  Processing by ApplicationController#root as HTML
+Rendered application/root.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/s3_uploads.xml?content%5Ftype=image%2Fjpeg&key=WeeMee%5F55eefcd48aa82f51be400083447af89b%5Ffor%5Fthesetu%2Ejpg" for 127.0.0.1 at 2010-12-09 22:24:47 +0600
+  Processing by S3UploadsController#index as XML
+  Parameters: {"content_type"=>"image/jpeg", "key"=>"WeeMee_55eefcd48aa82f51be400083447af89b_for_thesetu.jpg"}
+Completed   in 1ms
+
+NoMethodError (undefined method `&' for "u":String):
+  app/controllers/s3_uploads_controller.rb:36:in `index'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-12-09 22:26:28 +0600
+  Processing by ApplicationController#root as HTML
+Rendered application/root.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/s3_uploads.xml?content%5Ftype=image%2Fjpeg&key=WeeMee%5F55eefcd48aa82f51be400083447af89b%5Ffor%5Fthesetu%2Ejpg" for 127.0.0.1 at 2010-12-09 22:26:44 +0600
+  Processing by S3UploadsController#index as XML
+  Parameters: {"content_type"=>"image/jpeg", "key"=>"WeeMee_55eefcd48aa82f51be400083447af89b_for_thesetu.jpg"}
+Completed   in 0ms
+
+NoMethodError (undefined method `&' for "u":String):
+  app/controllers/s3_uploads_controller.rb:36:in `index'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-12-09 22:28:18 +0600
+  Processing by ApplicationController#root as HTML
+Rendered application/root.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/s3_uploads.xml?content%5Ftype=image%2Fjpeg&key=temp%2FWeeMee%5F55eefcd48aa82f51be400083447af89b%5Ffor%5Fthesetu%2Ejpg" for 127.0.0.1 at 2010-12-09 22:28:54 +0600
+  Processing by S3UploadsController#index as XML
+  Parameters: {"content_type"=>"image/jpeg", "key"=>"temp/WeeMee_55eefcd48aa82f51be400083447af89b_for_thesetu.jpg"}
+Completed   in 0ms
+
+NoMethodError (undefined method `&' for "u":String):
+  app/controllers/s3_uploads_controller.rb:36:in `index'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
